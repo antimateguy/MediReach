@@ -1,0 +1,16 @@
+# Data files - too large for GitHub
+data/raw/*.csv
+data/processed/*
+
+# Model files - can regenerate
+models/*.joblib
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml
