@@ -1,0 +1,430 @@
+{
+  "logistic_regression": {
+    "model": "Logistic Regression",
+    "timestamp": "2026-06-08T03:09:33.738621",
+    "roc_auc": 0.7423651564001589,
+    "accuracy": 0.6794052251250695,
+    "balanced_accuracy": 0.65924597706899,
+    "precision": 0.4539378612716763,
+    "recall": 0.6123294346978557,
+    "f1_score": 0.5213692946058092,
+    "matthews_corrcoef": 0.2955634822672078,
+    "cohen_kappa": 0.28826237152756573,
+    "true_negatives": 7265,
+    "false_positives": 3023,
+    "false_negatives": 1591,
+    "true_positives": 2513,
+    "missed_no_shows": 1591,
+    "false_alarms": 3023,
+    "catch_rate": 0.6123294346978557,
+    "false_positive_rate": 0.2938374805598756,
+    "false_negative_rate": 0.3876705653021443,
+    "true_positive_rate": 0.6123294346978557,
+    "precision_at_60_threshold": 0.5683139534883721,
+    "recall_at_60_threshold": 0.3810916179337232,
+    "f1_at_60_threshold": 0.456242707117853
+  },
+  "random_forest_200": {
+    "model": "Random Forest (200)",
+    "timestamp": "2026-06-08T03:09:33.759622",
+    "roc_auc": 0.7102785536774804,
+    "accuracy": 0.7424263479710951,
+    "balanced_accuracy": 0.5781728897801788,
+    "precision": 0.6639141205615194,
+    "recall": 0.195906432748538,
+    "f1_score": 0.30253998118532455,
+    "matthews_corrcoef": 0.25427816257037933,
+    "cohen_kappa": 0.19837318472607768,
+    "true_negatives": 9881,
+    "false_positives": 407,
+    "false_negatives": 3300,
+    "true_positives": 804,
+    "missed_no_shows": 3300,
+    "false_alarms": 407,
+    "catch_rate": 0.195906432748538,
+    "false_positive_rate": 0.0395606531881804,
+    "false_negative_rate": 0.804093567251462,
+    "true_positive_rate": 0.195906432748538,
+    "precision_at_60_threshold": 0.6982167352537723,
+    "recall_at_60_threshold": 0.12402534113060429,
+    "f1_at_60_threshold": 0.2106352162218084
+  },
+  "best_model": "Logistic Regression",
+  "optimal_threshold": 0.6,
+  "threshold_analysis": [
+    {
+      "threshold": 0.3,
+      "precision": 0.3485229143203673,
+      "recall": 0.9802631578947368,
+      "f1": 0.514219978270595,
+      "false_alarms": 7520,
+      "missed": 81,
+      "catch_rate": 0.9802631578947368
+    },
+    {
+      "threshold": 0.35,
+      "precision": 0.35531567489114657,
+      "recall": 0.9544346978557505,
+      "f1": 0.5178476996298255,
+      "false_alarms": 7107,
+      "missed": 187,
+      "catch_rate": 0.9544346978557505
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.3774520143429656,
+      "recall": 0.8720760233918129,
+      "f1": 0.5268658913587516,
+      "false_alarms": 5903,
+      "missed": 525,
+      "catch_rate": 0.8720760233918129
+    },
+    {
+      "threshold": 0.45,
+      "precision": 0.400125,
+      "recall": 0.7799707602339181,
+      "f1": 0.528916060806345,
+      "false_alarms": 4799,
+      "missed": 903,
+      "catch_rate": 0.7799707602339181
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.4539378612716763,
+      "recall": 0.6123294346978557,
+      "f1": 0.5213692946058092,
+      "false_alarms": 3023,
+      "missed": 1591,
+      "catch_rate": 0.6123294346978557
+    },
+    {
+      "threshold": 0.55,
+      "precision": 0.49031505250875146,
+      "recall": 0.5119395711500975,
+      "f1": 0.5008940278936703,
+      "false_alarms": 2184,
+      "missed": 2003,
+      "catch_rate": 0.5119395711500975
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.5683139534883721,
+      "recall": 0.3810916179337232,
+      "f1": 0.456242707117853,
+      "false_alarms": 1188,
+      "missed": 2540,
+      "catch_rate": 0.3810916179337232
+    },
+    {
+      "threshold": 0.65,
+      "precision": 0.6510869565217391,
+      "recall": 0.2919103313840156,
+      "f1": 0.40309555854643336,
+      "false_alarms": 642,
+      "missed": 2906,
+      "catch_rate": 0.2919103313840156
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.6593406593406593,
+      "recall": 0.2777777777777778,
+      "f1": 0.39087947882736157,
+      "false_alarms": 589,
+      "missed": 2964,
+      "catch_rate": 0.2777777777777778
+    },
+    {
+      "threshold": 0.75,
+      "precision": 0.6603662138216184,
+      "recall": 0.2724171539961014,
+      "f1": 0.3857167500431258,
+      "false_alarms": 575,
+      "missed": 2986,
+      "catch_rate": 0.2724171539961014
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.661826981246219,
+      "recall": 0.2665692007797271,
+      "f1": 0.3800590585374327,
+      "false_alarms": 559,
+      "missed": 3010,
+      "catch_rate": 0.2665692007797271
+    }
+  ],
+  "feature_importance": {
+    "random_forest": [
+      {
+        "feature": "past_no_show_rate",
+        "importance": 0.4753097419773487
+      },
+      {
+        "feature": "lead_x_past",
+        "importance": 0.25400640982047873
+      },
+      {
+        "feature": "lead_days",
+        "importance": 0.051083805705627386
+      },
+      {
+        "feature": "age_squared",
+        "importance": 0.046567623245648684
+      },
+      {
+        "feature": "age",
+        "importance": 0.04508638460929965
+      },
+      {
+        "feature": "high_risk_combo",
+        "importance": 0.026595469211591925
+      },
+      {
+        "feature": "lead_days_binned",
+        "importance": 0.016975477816855183
+      },
+      {
+        "feature": "appointment_dow",
+        "importance": 0.015915998843756447
+      },
+      {
+        "feature": "sms_received",
+        "importance": 0.014124300038287565
+      },
+      {
+        "feature": "young_long_wait",
+        "importance": 0.011767811229005547
+      },
+      {
+        "feature": "chronic_count",
+        "importance": 0.0058375328400251045
+      },
+      {
+        "feature": "sms_young_effective",
+        "importance": 0.00418018863684566
+      },
+      {
+        "feature": "hypertension",
+        "importance": 0.004088558136730103
+      },
+      {
+        "feature": "age_65+",
+        "importance": 0.004056331620685961
+      },
+      {
+        "feature": "age_50-64",
+        "importance": 0.0038701583724813637
+      },
+      {
+        "feature": "scholarship",
+        "importance": 0.003659197370425523
+      },
+      {
+        "feature": "age_18-34",
+        "importance": 0.0031309145746235725
+      },
+      {
+        "feature": "alcoholism",
+        "importance": 0.002681655089211565
+      },
+      {
+        "feature": "diabetes",
+        "importance": 0.002330863683067569
+      },
+      {
+        "feature": "age_35-49",
+        "importance": 0.0019242094126225644
+      },
+      {
+        "feature": "scholarship_sms_interaction",
+        "importance": 0.001562728006139889
+      },
+      {
+        "feature": "age_0-17",
+        "importance": 0.001546615946914795
+      },
+      {
+        "feature": "scholarship_young",
+        "importance": 0.0013609309678240475
+      },
+      {
+        "feature": "handicap_squared",
+        "importance": 0.0012319977864574969
+      },
+      {
+        "feature": "handicap",
+        "importance": 0.0010816068579453707
+      },
+      {
+        "feature": "is_weekend",
+        "importance": 2.3488200099560862e-05
+      }
+    ],
+    "logistic_regression": [
+      {
+        "feature": "past_no_show_rate",
+        "coefficient": 1.071098236388267,
+        "abs_coefficient": 1.071098236388267
+      },
+      {
+        "feature": "high_risk_combo",
+        "coefficient": -0.9148084143477723,
+        "abs_coefficient": 0.9148084143477723
+      },
+      {
+        "feature": "lead_x_past",
+        "coefficient": 0.4043712204209175,
+        "abs_coefficient": 0.4043712204209175
+      },
+      {
+        "feature": "is_weekend",
+        "coefficient": 0.38391909776727257,
+        "abs_coefficient": 0.38391909776727257
+      },
+      {
+        "feature": "lead_days",
+        "coefficient": -0.37723418213418225,
+        "abs_coefficient": 0.37723418213418225
+      },
+      {
+        "feature": "sms_received",
+        "coefficient": -0.2706305017971779,
+        "abs_coefficient": 0.2706305017971779
+      },
+      {
+        "feature": "hypertension",
+        "coefficient": -0.2038413217310816,
+        "abs_coefficient": 0.2038413217310816
+      },
+      {
+        "feature": "young_long_wait",
+        "coefficient": 0.19705691826474991,
+        "abs_coefficient": 0.19705691826474991
+      },
+      {
+        "feature": "scholarship",
+        "coefficient": 0.18071431154198717,
+        "abs_coefficient": 0.18071431154198717
+      },
+      {
+        "feature": "alcoholism",
+        "coefficient": 0.1729556658235512,
+        "abs_coefficient": 0.1729556658235512
+      },
+      {
+        "feature": "lead_days_binned",
+        "coefficient": 0.12807325610929424,
+        "abs_coefficient": 0.12807325610929424
+      },
+      {
+        "feature": "age_squared",
+        "coefficient": -0.11964833723859425,
+        "abs_coefficient": 0.11964833723859425
+      },
+      {
+        "feature": "chronic_count",
+        "coefficient": 0.10121722986006006,
+        "abs_coefficient": 0.10121722986006006
+      },
+      {
+        "feature": "age",
+        "coefficient": 0.08939528729623823,
+        "abs_coefficient": 0.08939528729623823
+      },
+      {
+        "feature": "age_50-64",
+        "coefficient": -0.08708620213863164,
+        "abs_coefficient": 0.08708620213863164
+      },
+      {
+        "feature": "age_65+",
+        "coefficient": -0.07902936621300277,
+        "abs_coefficient": 0.07902936621300277
+      },
+      {
+        "feature": "sms_young_effective",
+        "coefficient": 0.07856122519323615,
+        "abs_coefficient": 0.07856122519323615
+      },
+      {
+        "feature": "age_18-34",
+        "coefficient": 0.07428298037223961,
+        "abs_coefficient": 0.07428298037223961
+      },
+      {
+        "feature": "scholarship_young",
+        "coefficient": -0.07330183960272967,
+        "abs_coefficient": 0.07330183960272967
+      },
+      {
+        "feature": "age_0-17",
+        "coefficient": 0.05183224751103477,
+        "abs_coefficient": 0.05183224751103477
+      },
+      {
+        "feature": "appointment_dow",
+        "coefficient": -0.02852619252584969,
+        "abs_coefficient": 0.02852619252584969
+      },
+      {
+        "feature": "age_35-49",
+        "coefficient": 0.028145324105805343,
+        "abs_coefficient": 0.028145324105805343
+      },
+      {
+        "feature": "scholarship_sms_interaction",
+        "coefficient": 0.021297862657696093,
+        "abs_coefficient": 0.021297862657696093
+      },
+      {
+        "feature": "diabetes",
+        "coefficient": -0.018367446950540017,
+        "abs_coefficient": 0.018367446950540017
+      },
+      {
+        "feature": "handicap_squared",
+        "coefficient": 0.00941387431456778,
+        "abs_coefficient": 0.00941387431456778
+      },
+      {
+        "feature": "handicap",
+        "coefficient": -0.007790507726414099,
+        "abs_coefficient": 0.007790507726414099
+      }
+    ]
+  },
+  "dataset_info": {
+    "train_size": 57567,
+    "test_size": 14392,
+    "no_show_rate": 0.28519811697674013,
+    "n_features": 26,
+    "feature_names": [
+      "age",
+      "lead_days",
+      "sms_received",
+      "scholarship",
+      "hypertension",
+      "diabetes",
+      "alcoholism",
+      "handicap",
+      "past_no_show_rate",
+      "scholarship_sms_interaction",
+      "young_long_wait",
+      "high_risk_combo",
+      "appointment_dow",
+      "age_0-17",
+      "age_18-34",
+      "age_35-49",
+      "age_50-64",
+      "age_65+",
+      "is_weekend",
+      "age_squared",
+      "lead_days_binned",
+      "scholarship_young",
+      "chronic_count",
+      "handicap_squared",
+      "lead_x_past",
+      "sms_young_effective"
+    ]
+  },
+  "training_date": "2026-06-08T03:09:35.005618"
+}
