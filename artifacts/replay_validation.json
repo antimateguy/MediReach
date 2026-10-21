@@ -1,0 +1,82 @@
+{
+  "settings": {
+    "replay_week": "2026-10-22",
+    "calls_per_day": 440,
+    "sms_per_day": 880,
+    "holdout": "PILOT (50%)",
+    "reach_per_attempt": 0.6,
+    "planted_effect": 0.3
+  },
+  "historical": {
+    "closed_days": 5,
+    "source": "historical",
+    "patients_call": 1100,
+    "patients_holdout": 1100,
+    "no_show_call": 0.39,
+    "no_show_holdout": 0.37,
+    "comparison": {
+      "rate_1": 0.39,
+      "rate_2": 0.37,
+      "difference": 0.020000000000000018,
+      "ci_low": -0.02055740712529921,
+      "ci_high": 0.060557407125299244,
+      "z": 0.9663260723474627,
+      "p_value": 0.3338810436953058
+    },
+    "relative_reduction": -0.05405405405405417,
+    "reduction_ci": [
+      -0.17287041661530833,
+      0.052725746059809286
+    ],
+    "patients_attempted": 1100,
+    "patients_reached": 911,
+    "reach": 0.8281818181818181,
+    "released_slots": 93,
+    "outcome_mix": {
+      "SMS_SENT": 4589,
+      "CONFIRMED": 818,
+      "NO_ANSWER": 622,
+      "RESCHEDULE": 57,
+      "CANCEL": 36
+    },
+    "overrides": {},
+    "required_call": 790,
+    "required_holdout": 790
+  },
+  "simulated": {
+    "closed_days": 5,
+    "source": "simulated",
+    "patients_call": 1100,
+    "patients_holdout": 1100,
+    "no_show_call": 0.29818181818181816,
+    "no_show_holdout": 0.37,
+    "comparison": {
+      "rate_1": 0.29818181818181816,
+      "rate_2": 0.37,
+      "difference": -0.07181818181818184,
+      "ci_low": -0.11112358706278559,
+      "ci_high": -0.03251277657357808,
+      "z": -3.570885705531711,
+      "p_value": 0.00035577612788651976
+    },
+    "relative_reduction": 0.1941031941031942,
+    "reduction_ci": [
+      0.09224389714732695,
+      0.2845328610695317
+    ],
+    "patients_attempted": 1100,
+    "patients_reached": 911,
+    "reach": 0.8281818181818181,
+    "released_slots": 93,
+    "outcome_mix": {
+      "SMS_SENT": 4589,
+      "CONFIRMED": 818,
+      "NO_ANSWER": 622,
+      "RESCHEDULE": 57,
+      "CANCEL": 36
+    },
+    "overrides": {},
+    "required_call": 790,
+    "required_holdout": 790
+  }
+}

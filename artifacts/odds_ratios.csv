@@ -1,0 +1,22 @@
+feature,description,coefficient,odds_ratio,unit
+lead_bucket_0,Booked on the day of the appointment (vs 1-3 days ahead),-1.840323,0.158766,yes vs no
+lead_bucket_31+,Booked 31 or more days ahead (vs 1-3 days ahead),0.639563,1.895652,yes vs no
+lead_bucket_15-30,Booked 15-30 days ahead (vs 1-3 days ahead),0.595872,1.814612,yes vs no
+had_prior_no_show,Missed at least one earlier appointment,-0.585404,0.556881,yes vs no
+age_group_65+,Age 65 or older (vs age 35-49),-0.457100,0.633117,yes vs no
+lead_bucket_8-14,Booked 8-14 days ahead (vs 1-3 days ahead),0.444417,1.559581,yes vs no
+age_group_50-64,Age 50-64 (vs age 35-49),-0.315477,0.729441,yes vs no
+alcoholism,Alcoholism recorded,0.302972,1.353876,yes vs no
+prior_no_show_rate_smoothed,"Share of earlier appointments missed, pulled towards the average when history is short",0.285719,1.330718,per 1 SD
+scholarship,Enrolled in the welfare programme (supportive outreach only),0.231808,1.260878,yes vs no
+age_group_18-34,"Younger adult, 18-34 (vs age 35-49)",0.206537,1.229414,yes vs no
+lead_bucket_4-7,Booked 4-7 days ahead (vs 1-3 days ahead),0.200931,1.222541,yes vs no
+age_group_0-17,"Child, 0-17 (vs age 35-49)",0.196653,1.217321,yes vs no
+sms_received,An SMS reminder was sent for this appointment,-0.170781,0.843006,yes vs no
+diabetes,Has diabetes,0.140820,1.151218,yes vs no
+has_history,Patient has at least one earlier appointment on record,0.131626,1.140682,yes vs no
+prior_appt_count,Number of earlier appointments (capped at 5),0.121415,1.129093,per 1 SD
+has_handicap,Any handicap recorded (supportive outreach only),0.077207,1.080266,yes vs no
+gender_male,Male (vs female),0.047187,1.048318,yes vs no
+is_weekend,Appointment falls on a Saturday or Sunday,0.029716,1.030162,yes vs no
+hypertension,Has hypertension,0.019832,1.020030,yes vs no

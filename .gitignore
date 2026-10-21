@@ -1,0 +1,35 @@
+# Local configuration (never commit real environment files)
+.env
+
+# Raw and intermediate data: the raw CSV is downloaded from Kaggle (see README)
+data/raw/
+data/processed/
+
+# NOT ignored on purpose (the deployed app reads them):
+#   data/medireach.db, models/, artifacts/
+data/*.building
+# Workflow state written by the app (plans, tasks, logins)
+data/ops.db
+data/ops.db-*
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+# Python cache and environments
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+stable/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# VS Code & IDEs
+.vscode/
+.idea/
+
+# Gemini key (see secrets.toml.example)
+secrets.toml
+

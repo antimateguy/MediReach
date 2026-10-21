@@ -1,0 +1,19 @@
+study,step,label,model,n_features,roc_auc,precision_at_10,gain_roc_auc
+added one at a time,1,Lead time,logistic_regression,5,0.698885,0.314236,
+added one at a time,2,+ Patient history,logistic_regression,9,0.713804,0.360595,0.014919
+added one at a time,3,+ Age and gender,logistic_regression,14,0.730638,0.377629,0.016834
+added one at a time,4,+ Health and welfare flags,logistic_regression,19,0.732958,0.395248,0.002320
+added one at a time,5,+ SMS reminder,logistic_regression,20,0.735637,0.410581,0.002678
+added one at a time,6,+ Weekend,logistic_regression,21,0.735640,0.410534,0.000004
+left out one at a time,1,without Lead time,logistic_regression,16,0.659861,0.362222,-0.075779
+left out one at a time,2,without Patient history,logistic_regression,17,0.726032,0.379292,-0.009608
+left out one at a time,3,without Age and gender,logistic_regression,16,0.725139,0.384211,-0.010502
+left out one at a time,4,without Health and welfare flags,logistic_regression,16,0.733378,0.400859,-0.002263
+left out one at a time,5,without SMS reminder,logistic_regression,20,0.732958,0.395248,-0.002682
+left out one at a time,6,without Weekend,logistic_regression,20,0.735637,0.410581,-0.000004
+model x information,1,Lead time only,lead_time_baseline,5,0.698885,0.314236,
+model x information,2,Lead time only,logistic_regression,5,0.698885,0.314236,
+model x information,3,Lead time only,random_forest,5,0.698885,0.314236,
+model x information,4,All features,logistic_regression,21,0.735640,0.410534,
+model x information,5,All features,random_forest,21,0.737409,0.393245,
+added one at a time,7,+ Clinic location (encoded),logistic_regression,22,0.733839,0.397733,-0.001802

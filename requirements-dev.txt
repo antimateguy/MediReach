@@ -1,0 +1,4 @@
+# Everything in requirements.txt, plus what the tests need.
+-r requirements.txt
+pytest==9.1.1
+httpx==0.28.1

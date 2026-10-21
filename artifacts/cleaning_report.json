@@ -1,0 +1,28 @@
+{
+  "rows_in": 110527,
+  "rows_out": 110516,
+  "dropped": {
+    "negative_lead_days": 5,
+    "invalid_age": 6,
+    "duplicate_appointment_id": 0
+  },
+  "patients": 62296,
+  "clinics": 81,
+  "patients_with_varying_attributes": 1168,
+  "varying_by_attribute": {
+    "gender": 0,
+    "age": 1168,
+    "scholarship": 0,
+    "hypertension": 0,
+    "diabetes": 0,
+    "alcoholism": 0,
+    "handicap": 0
+  },
+  "patient_id_collisions": 0,
+  "base_rate_before": 0.20193255946510807,
+  "base_rate_after": 0.20188027073003004,
+  "same_day_rows": 38561,
+  "same_day_share": 0.34891780375692205,
+  "same_day_no_show_rate": 0.04647182386348902,
+  "v1_timestamp_filter_drops": 38568
+}

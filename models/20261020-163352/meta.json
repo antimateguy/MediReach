@@ -1,0 +1,76 @@
+{
+  "version": "20261020-163352",
+  "model_name": "logistic_regression",
+  "feature_columns": [
+    "lead_bucket_0",
+    "lead_bucket_4-7",
+    "lead_bucket_8-14",
+    "lead_bucket_15-30",
+    "lead_bucket_31+",
+    "age_group_0-17",
+    "age_group_18-34",
+    "age_group_50-64",
+    "age_group_65+",
+    "sms_received",
+    "scholarship",
+    "hypertension",
+    "diabetes",
+    "alcoholism",
+    "has_handicap",
+    "gender_male",
+    "is_weekend",
+    "has_history",
+    "prior_appt_count",
+    "prior_no_show_rate_smoothed",
+    "had_prior_no_show"
+  ],
+  "trained_at": "2026-10-20T16:33:52+00:00",
+  "train_range": [
+    "2016-04-29",
+    "2016-05-20"
+  ],
+  "validation_range": [
+    "2016-05-24",
+    "2016-06-01"
+  ],
+  "test_range": [
+    "2016-06-02",
+    "2016-06-08"
+  ],
+  "sklearn_version": "1.7.2",
+  "python_version": "3.10.20",
+  "validation_metrics": {
+    "n": 21174.0,
+    "base_rate": 0.1906583545858128,
+    "roc_auc": 0.7356403073172039,
+    "pr_auc": 0.35564254317603555,
+    "brier": 0.13827814428087912,
+    "precision_at_5": 0.42870632672332387,
+    "capture_at_5": 0.11245974733713153,
+    "precision_at_10": 0.410533774208786,
+    "capture_at_10": 0.2152836264552886,
+    "precision_at_20": 0.3653810835629018,
+    "capture_at_20": 0.3833016816668043,
+    "precision_at_30": 0.3374352784774699,
+    "capture_at_30": 0.5309360636336112,
+    "lift_top_decile": 2.153243035694039
+  },
+  "test_metrics": {
+    "n": 21985.0,
+    "base_rate": 0.18512622242438026,
+    "roc_auc": 0.7278044423537028,
+    "pr_auc": 0.3348958287746827,
+    "brier": 0.13744814503424396,
+    "precision_at_5": 0.4118895966029724,
+    "capture_at_5": 0.11122031122031123,
+    "precision_at_10": 0.3862602365787079,
+    "capture_at_10": 0.2085995085995086,
+    "precision_at_20": 0.3477971091400703,
+    "capture_at_20": 0.3757405132405133,
+    "precision_at_30": 0.3245653931675763,
+    "capture_at_30": 0.526003276003276,
+    "lift_top_decile": 2.086469607170244
+  },
+  "selection_reason": "Selected logistic_regression on validation ROC-AUC. logistic_regression (0.7356) beats lead_time_baseline (0.6989) by 0.0368, more than 0.01; random_forest (0.7374) does not beat logistic_regression (0.7356) by more than 0.01 (gain +0.0018).",
+  "history_prior_rate": 0.2108763751354722
+}

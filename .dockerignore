@@ -1,0 +1,19 @@
+# Keep the image small and never copy secrets or local state into it.
+.git
+.gitignore
+.venv
+venv
+stable
+.vscode
+.idea
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.env
+secrets.toml
+data/raw
+data/ops.db*
+data/*.building
+tests
+docs
+notebooks

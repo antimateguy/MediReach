@@ -1,0 +1,12 @@
+# Runtime, pinned to the versions the project was built and tested with (Python 3.10).
+# For the tests as well: pip install -r requirements-dev.txt
+pandas==2.3.3
+numpy==2.2.6
+scikit-learn==1.7.2
+scipy==1.15.2
+joblib==1.5.3
+# Web app (python -m medireach.web)
+starlette==1.7.0
+uvicorn==0.54.0
+# Time-zone database for zoneinfo (Windows has none built in)
+tzdata==2026.5

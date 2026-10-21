@@ -1,0 +1,16 @@
+# Render blueprint: the API (and, at its own address, the whole app) as one free web service from the Dockerfile.
+# In Render: New -> Blueprint -> pick this repository. Render sets PORT itself.
+services:
+  - type: web
+    name: medireach
+    runtime: docker
+    plan: free
+    region: singapore              # closest Render region to India; put Neon in Singapore too
+    healthCheckPath: /api/health
+    envVars:
+      - key: MEDIREACH_SESSION_SECRET
+        generateValue: true          # keeps people logged in across restarts
+      - key: MEDIREACH_CORS_ORIGINS
+        value: https://medireach.pages.dev     # the Cloudflare Pages frontend; change if your project name differs
+      - key: GEMINI_API_KEY
+        sync: false                  # optional: Render asks for the value; leave empty for template text

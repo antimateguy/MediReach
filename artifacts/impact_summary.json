@@ -1,0 +1,36 @@
+{
+  "assumptions": {
+    "call_reach_rate": 0.6,
+    "call_effectiveness": 0.3,
+    "sms_reach_rate": 0.9,
+    "sms_effectiveness": 0.1,
+    "cost_per_call": 40.0,
+    "cost_per_sms": 1.0,
+    "value_per_kept_visit": 500.0
+  },
+  "policy": {
+    "name": "capacity",
+    "call_share": 0.1,
+    "sms_share": 0.2
+  },
+  "selected_model": "logistic_regression",
+  "break_even_call_effectiveness": 0.1344040640875342,
+  "pilot_plan": {
+    "p_control": 0.38772727272727275,
+    "relative_reduction": 0.18,
+    "alpha": 0.05,
+    "power": 0.8,
+    "sample_size_per_arm": 735,
+    "total_sample": 1470,
+    "daily_high_volume": 440.0,
+    "estimated_days": 4,
+    "primary_metric": "no-show rate",
+    "guardrails": [
+      "Randomise only within the HIGH list; everyone else is handled as usual.",
+      "Never withhold care: the control arm keeps every existing reminder.",
+      "If the clinic requires it, give the control arm a delayed call instead of no call.",
+      "Fix the sample size and the primary metric before starting; do not stop early on a good week.",
+      "Compare arms as randomised (intention to treat), whether or not the call was answered."
+    ]
+  }
+}

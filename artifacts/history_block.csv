@@ -1,0 +1,4 @@
+group,n,observed_rate,mean_net_log_odds
+"Earlier visits, at least one missed",4397,0.246987,0.357051
+"Earlier visits, none missed",8440,0.179502,-0.047721
+No earlier visits,9148,0.160582,-0.053413
